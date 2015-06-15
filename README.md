@@ -4,7 +4,7 @@ that has git functionality that The Network uses. Right now, its only
 function is to modify the console prompt play more nicely with our
 branch naming conventions.
 
-To install this plugin, you can use `sh -c "$(curl -fsSL https://raw.github.com/tnwinc/omz-git/install-plugin.sh)"`. You can then add the plugin to your .zshrc. Alternatively, you can clone the repo into your ~/.oh-my-zsh/custom/plugins directory and do the same.
+To install this plugin, you can use `sh -c "$(curl -fsSL https://raw.github.com/tnwinc/omz-git/master/install-plugin.sh)"`. You can then add the plugin to your .zshrc. Alternatively, you can clone the repo into your ~/.oh-my-zsh/custom/plugins directory and do the same.
 
 ##Branch Naming
 By default, this plugin will truncate branch names to 20 characters
