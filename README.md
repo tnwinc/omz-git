@@ -15,7 +15,15 @@ Pivotal Tracker ID will always be included at the end.
 So, with the default settings, a branch like `pt-custom-list-doesnt-return-results-if-there-are-values-for-hire-date-96306202` will
 be displayed as `custom-li...96306202`.
 
-This is customizable in two ways. You can set a different maximum branch
-name length using `git config --global oh-my-zsh.max-branch-length n` to
-have a longer or shorter name limit, and you can make the team prefix
-always display using `git config --global oh-my-zsh.show-team 1`.
+This is customizable in a few ways. You can set these options using git
+config --global oh-my-zsh.\<option name> n.
+
+* max-branch-length - the maximum length of branch name that will be
+  displayed in your prompt. Defaults to 20.
+* prefix-length - removes n characters from the beginning of the branch
+  name. Useful if a lot of your branches have a fix-length prefix.
+Defaults to 0 with manual install, set to 3 by install script.
+* suffix-length - ensures that n characters at the end of the branch
+  name are included in the output. Useful if you have an ID or other
+fixed-length identifier appended to the branch name. Defaults to 0 with
+manual install , set to 8 by install script.
