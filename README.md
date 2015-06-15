@@ -16,7 +16,7 @@ So, with the default settings, a branch like `pt-custom-list-doesnt-return-resul
 be displayed as `custom-li...96306202`.
 
 This is customizable in a few ways. You can set these options using `git
-config --global oh-my-zsh.\<option name> n`.
+config --global oh-my-zsh.<option name> n`.
 
 * max-branch-length - the maximum length of branch name that will be
   displayed in your prompt. Defaults to 20.
