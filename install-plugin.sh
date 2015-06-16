@@ -15,4 +15,5 @@ then
     exit 1
 fi
 
+cd ${pluginPath}
 ./tnwinc-setup.sh
