@@ -1,4 +1,4 @@
-local pluginPath=${ZSH}/custom/plugins/omz-git
+pluginPath=${ZSH}/custom/plugins/omz-git
 
 rm -rf ${pluginPath}
 
