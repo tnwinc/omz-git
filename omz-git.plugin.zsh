@@ -4,11 +4,18 @@ function git_prompt_info() {
     ref=$(command git rev-parse --short HEAD 2> /dev/null) || return 0
     ref="$(command echo ${ref#refs/heads/})"
     length=${#ref}
+
     maxLength=$(command git config --get oh-my-zsh.max-branch-length 2>/dev/null)
     if [[ -z ${maxLength} ]]; then
       maxLength=20
     fi
+
+
     if [[ ${length} -gt ${maxLength} ]]; then
+      regex=$(command git config --get oh-my-zsh.prefix-regex 2>/dev/null)
+      if [[ -n ${regex} ]]; then
+        ref=$(command echo ${ref} | sed "s/${regex}//1" ) #${regex})
+      fi
 
       prefixLength=$(command git config --get oh-my-zsh.prefix-length 2>/dev/null)
       if [[ -z ${prefixLength} ]]; then
@@ -36,3 +43,4 @@ function git_prompt_info() {
     echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref}$(parse_git_dirty)$ZSH_THEME_GIT_PROMPT_SUFFIX"
   fi
 }
+

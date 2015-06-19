@@ -1,6 +1,7 @@
 
 #Setup for tnwinc branch names
-git config --global oh-my-zsh.prefix-length 3
+git config --global oh-my-zsh.prefix-length 0
+git config --global oh-my-zsh.prefix-regex "[^-]*-"
 git config --global oh-my-zsh.suffix-length 8
 
 #Aliases

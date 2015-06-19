@@ -20,9 +20,12 @@ config --global oh-my-zsh.<option name> n`.
 
 * max-branch-length - the maximum length of branch name that will be
   displayed in your prompt. Defaults to 20.
+* prefix-regex - the first match for this regex will be removed. By
+  default, no regex is used. With the TNWInc options, every character up
+to and including the first '-' character will be removed.
 * prefix-length - removes n characters from the beginning of the branch
   name. Useful if a lot of your branches have a fix-length prefix.
-Defaults to 0 with manual install, set to 3 by install script.
+Defaults to 0.
 * suffix-length - ensures that n characters at the end of the branch
   name are included in the output. Useful if you have an ID or other
 fixed-length identifier appended to the branch name. Defaults to 0 with
