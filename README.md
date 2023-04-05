@@ -30,3 +30,6 @@ Defaults to 0.
   name are included in the output. Useful if you have an ID or other
 fixed-length identifier appended to the branch name. Defaults to 0 with
 manual install , set to 8 by install script.
+* omz-separator - character used to separate the prefix and suffix.
+Defaults to a dot `.`
+* omz-separator-length - number used to multiply the separator. Defaults to 3
